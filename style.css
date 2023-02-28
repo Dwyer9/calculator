@@ -1,0 +1,110 @@
+.body {
+  font-family: 'sans-serif';
+}
+
+.container {
+  width: 350px;
+  height: 585px;
+  border: 1px solid black;
+  background-color: ivory;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-row-start: span 4;
+  grid-column-start: span 3;
+  border: 8px solid #432b17;
+  border-radius: 0 0 10px 10px;
+  margin: 0 12px;
+}
+
+.window-container {
+  background-color: #432b17;
+  height: 240px;
+  margin: 12px;
+  margin-bottom: 0;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.window {
+  grid-column-start: span 4;
+  width: 300px;
+  height: 100px;
+  background-color: black;
+  margin: 0 auto;
+  align-self: flex-end;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.answer {
+  color: green;
+  font-size: 36px;
+  max-width: 280px;
+  margin: 30px auto;
+}
+
+.text {
+  margin: 0 auto;
+  background-color: black;
+  width: 300px;
+  margin-bottom: 8px;
+  height: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: sans-serif;
+}
+
+.blueText {
+  color: rgb(112, 172, 221);
+  font-size: 9px;
+  margin-top: 4px;
+}
+
+.maker {
+  color: white;
+  font-size: 17px;
+}
+
+.number,
+.operator,
+.clear {
+  width: 50px;
+  height: 40px;
+  border: 2px solid black;
+  margin: 12px;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.number {
+  background-color: black;
+}
+
+.operator {
+  background-color: grey;
+}
+
+.clear {
+  background-color: #432b17;
+  font-size: 16px;
+  height: 25px;
+}
+
+.allClear {
+  background-color: orangered;
+}
