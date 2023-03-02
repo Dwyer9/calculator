@@ -31,6 +31,9 @@ numberBtns.forEach((button) => {
   button.addEventListener('click', (e) => {
     if (e.target.textContent === '.' && state1 && val1.includes('.')) return;
     if (e.target.textContent === '.' && !state1 && val2.includes('.')) return;
+
+    if (state1 && val1.length > 14) return;
+    if (!state1 && val2.length > 14) return;
     // console.log(e.target.textContent);
     if (state1) {
       val1 += e.target.textContent;
