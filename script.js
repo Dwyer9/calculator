@@ -77,7 +77,10 @@ operatorBtns.forEach((button) => {
     } else {
       result = operator(+val1, +val2);
 
-      if (result % 1 === 0) {
+      if (result > 1000000000) {
+        result = result.toExponential(2);
+        answer.textContent = result;
+      } else if (result % 1 === 0) {
         answer.textContent = result;
       } else {
         answer.textContent = result.toFixed(3);
